@@ -150,13 +150,13 @@ public class Texture extends Image{
         GL.glTexCoord2f(texOffX, texOffY);
         GL.glVertex3f(0, 0, 0);
         this.bindMultipliedColor(light[BOTTOM_LEFT], filter);
-        GL.glTexCoord2f(texOffX, texOffY + texHeight);
+        GL.glTexCoord2f(texOffX, texOffY+texHeight);
         GL.glVertex3f(0, height, 0);
         this.bindMultipliedColor(light[BOTTOM_RIGHT], filter);
-        GL.glTexCoord2f(texOffX + texWidth, texOffY + texHeight);
+        GL.glTexCoord2f(texOffX+texWidth, texOffY+texHeight);
         GL.glVertex3f(width, height, 0);
         this.bindMultipliedColor(light[TOP_RIGHT], filter);
-        GL.glTexCoord2f(texOffX + texWidth, texOffY);
+        GL.glTexCoord2f(texOffX+texWidth, texOffY);
         GL.glVertex3f(width, 0, 0);
     }
 
